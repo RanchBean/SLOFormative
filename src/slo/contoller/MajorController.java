@@ -6,18 +6,31 @@ import slo.model.*;
 public class MajorController 
 {
 	private MajorFrame majorFrame;
-	private MajorPanel majorPanel;
 	private WindowView windowView;
 	private YearAndMajor yearAndMajor;
 	
 	 public MajorController()
 	 {
 		 windowView = new WindowView();
-		 sloFrame = new SLOFrame();
-		 sloPanel = new SLOPanel();
+		 majorFrame = new MajorFrame(this);
+		 String user = windowView.getAnswer("");
 	 }
 	 public void Start()
 	 {
 		 
 	 }
+	public YearAndMajor getYearAndMajor()
+	{
+		return yearAndMajor;
+	}
+		
+	public WindowView getWindowView()
+	{
+		return windowView;
+	}
+
+	public MajorFrame getMajorFrame()
+	{
+		return majorFrame;
+	}
 }

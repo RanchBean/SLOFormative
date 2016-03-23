@@ -7,7 +7,7 @@ public class MajorRunner
 	{
 		// TODO Auto-generated method stub
 		MajorController myMajorController = new MajorController();
-		myMajorController.start();
+		myMajorController.Start();
 	}
 
 }

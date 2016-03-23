@@ -1,5 +1,6 @@
 package slo.model;
 
-public class YearAndMajor {
+public class YearAndMajor 
+{
 
 }
